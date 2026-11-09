@@ -185,8 +185,8 @@ function render(){{
       <h3 class="title">${{esc(p.title)}}</h3>
       <div class="price">${{money(p.price)}}</div>
       <div class="actions">
-        <a class="buy" href="${{STORE + p.id}}" target="_blank" rel="noopener">صفحة الشراء</a>
-        <a class="buy wa2" href="${{waLink(p)}}" target="_blank" rel="noopener">واتساب</a>
+        <a class="buy wa2" href="${{waLink(p)}}" target="_blank" rel="noopener">اطلب واتساب</a>
+        <a class="buy" href="${{STORE + p.id}}" target="_blank" rel="noopener">رابط الشراء</a>
       </div>
       <button class="more" data-id="${{p.id}}">التفاصيل</button>
     </article>`).join('');
@@ -201,8 +201,8 @@ function openSheet(id){{
     <div class="cat">${{esc(p.cat)}} · ${{money(p.price)}}</div>
     <p class="p">${{esc(DESC[p.cat] || DESC['أخرى'])}}</p>
     <div class="row">
-      <a class="buy" href="${{STORE + p.id}}" target="_blank" rel="noopener" style="flex:1">اشترِ من المنصة</a>
       <a class="buy wa2" href="${{waLink(p)}}" target="_blank" rel="noopener" style="flex:1">اطلب على واتساب</a>
+      <a class="buy" href="${{STORE + p.id}}" target="_blank" rel="noopener" style="flex:1">اشترِ من المنصة</a>
     </div>
     <button class="close" id="closeSheet">إغلاق</button>`;
   $('#sheet').classList.add('open');
