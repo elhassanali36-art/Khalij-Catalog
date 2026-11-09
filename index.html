@@ -169,6 +169,7 @@ function openSheet(id){
     <h3>${esc(p.title)}</h3>
     <div class="cat">${esc(p.cat)} · ${money(p.price)}</div>
     <p class="p">${esc(DESC[p.cat] || DESC['أخرى'])}</p>
+    <p class="p" style="font-size:12.5px">إن لم تفتح صفحة الشراء، اضغط «اطلب على واتساب» ونرسل لك رابط دفع مباشر خلال دقائق.</p>
     <div class="row">
       <a class="buy wa2" href="${waLink(p)}" target="_blank" rel="noopener" style="flex:1">اطلب على واتساب</a>
       <a class="buy" href="${STORE + p.id}" target="_blank" rel="noopener" style="flex:1">اشترِ من المنصة</a>
