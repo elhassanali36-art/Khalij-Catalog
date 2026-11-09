@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://elhassanali36-art.github.io/Khalij-Catalog/sitemap.xml
